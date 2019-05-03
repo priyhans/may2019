@@ -16,7 +16,7 @@ public class Application {
 	ABC target=(ABC)ctx.getBean("target");
 	System.out.println("INFO:: Invoking a() of target...");
 	target.a();
-	System.out.println("INFO::Invoking b() of target...");
+	System.out.println("DEBUD::Invoking b() of target...");
 	String rt=target.b();
 	System.out.println(rt+" is returned by b() in main().");
 	System.out.println("Invoking c() of target...");
