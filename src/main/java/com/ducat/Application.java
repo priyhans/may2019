@@ -14,9 +14,9 @@ public class Application {
 	ApplicationContext ctx=	SpringApplication.run(Application.class, args);
 	System.out.println("Application started, requesting target bean...");
 	ABC target=(ABC)ctx.getBean("target");
-	System.out.println("Invoking a() of target...");
+	System.out.println("INFO:: Invoking a() of target...");
 	target.a();
-	System.out.println("Invoking b() of target...");
+	System.out.println("INFO::Invoking b() of target...");
 	String rt=target.b();
 	System.out.println(rt+" is returned by b() in main().");
 	System.out.println("Invoking c() of target...");
